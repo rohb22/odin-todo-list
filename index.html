@@ -5,10 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src=""></script>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
 </head>
 <body>
-    
+    <div id="modal">
+        <div id="form-container">
+            <label for="form" id="form-label"></label>
+            <textarea name="form" id="form" cols="30" rows="10"></textarea>
+            <div id="form-actions">
+                <button id="deny-button">X</button>
+                <button id="confirm-button">&#10003</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        
+        <div id="hero">
+            <h2 id="logo">To-Do List</h2>
+        </div>
+
+        <div id="sidebar">
+            <div id="sidebar-title">
+                <h2>Projects</h2>
+                <button id="add_project">+</button>
+            </div>
+            <div id="projects">
+            </div>
+        </div>
+        <div id="content"></div>
+
+    </div>
 </body>
 </html>
